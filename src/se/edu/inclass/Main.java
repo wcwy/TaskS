@@ -36,12 +36,14 @@ public class Main {
     }
 
     public static void printData(ArrayList<Task> tasksData) {
+        System.out.println("Printing data using loop");
         for (Task t : tasksData) {
             System.out.println(t);
         }
     }
 
     public static void printDeadlines(ArrayList<Task> tasksData) {
+        System.out.println("Printing deadline using loop");
         for (Task t : tasksData) {
             if (t instanceof Deadline) {
                 System.out.println(t);
